@@ -1,0 +1,74 @@
+//base
+@import "../variables/variables.scss";
+button {
+  background-color: $secondaryColor;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+  border: 0.1rem solid transparent;
+  &:hover {
+    background-color: white;
+    border-color: $secondaryColor;
+    color: $secondaryColor;
+  }
+}
+
+h1 {
+  color: $primaryColor;
+  font-size: 3em;
+}
+
+h2 {
+  color: $primaryColor;
+  font-size: 2.2em;
+}
+
+h3 {
+  color: $secondaryColor;
+  font-size: 1.4em;
+}
+h4 {
+  color: $secondaryColor;
+  font-size: 1.2em;
+}
+h5 {
+  color: rgb(116, 116, 116);
+  font-weight: 500;
+  font-size: 1.15em;
+  letter-spacing: 0.05rem;
+  line-height: 1.7em;
+}
+p {
+  color: rgb(116, 116, 116);
+  font-size: 1.1em;
+  letter-spacing: 0.04em;
+  line-height: 1.5em;
+}
+
+a {
+  color: $primaryColor;
+  transition: 0.3s ease-in-out;
+  font-size: 1.3em;
+  margin: 0 2em;
+  &:hover {
+    color: $secondaryColor;
+  }
+}
+
+.info {
+  .title {
+    margin-top: 0.5rem;
+  }
+  .description {
+    margin: 1.2rem 0;
+  }
+}
+
+ul {
+  display: flex;
+  align-items: center;
+}

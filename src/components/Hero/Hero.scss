@@ -1,0 +1,28 @@
+.hero__container {
+  display: flex;
+  width: min(95%, 1200px);
+  margin-inline: auto;
+
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+  }
+  .info {
+    margin: 3rem 2rem 0 0;
+
+    @media screen and (max-width: 768px) {
+      margin: 0 0 2rem;
+    }
+
+    .title {
+      margin: 0.5rem 0 2rem 0;
+    }
+    .description {
+      margin-bottom: 2rem;
+    }
+  }
+  .hero__image {
+    img {
+      max-width: 100%;
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import AboutImg from "../../assets/whatIsCovid.png";
+import "./About.scss";
 
 const About = () => {
   return (

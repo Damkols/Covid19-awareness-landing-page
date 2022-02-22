@@ -1,0 +1,63 @@
+@import "../../styles/mixin/mixin.scss";
+@import "../../styles/variables/variables.scss";
+@import "../../styles/base/base.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav__container {
+  width: min(95%, 1200px);
+  margin-inline: auto;
+  padding: 1rem;
+
+  .nav__toggle {
+    display: none;
+
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  nav {
+    @include enableFlex();
+    justify-content: space-between;
+
+    @media screen and (max-width: 768px) {
+      @include enableFlex(true);
+      align-items: flex-start;
+    }
+
+    .brand {
+      @media screen and (max-width: 768px) {
+      }
+    }
+    ul {
+      @media screen and (max-width: 768px) {
+        @include enableFlex(true);
+      }
+      li {
+        a {
+          color: $primaryColor;
+          transition: 0.3s ease-in-out;
+          font-size: 1rem;
+          margin: 0 1rem;
+          &:hover {
+            color: $secondaryColor;
+          }
+        }
+        &:nth-child(1) {
+          a {
+            color: $secondaryColor;
+          }
+        }
+        button {
+          background-color: white;
+          border: 0.1rem solid $secondaryColor;
+          color: $secondaryColor;
+        }
+      }
+    }
+  }
+}

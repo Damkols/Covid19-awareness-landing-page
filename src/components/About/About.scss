@@ -1,0 +1,33 @@
+@import "../../styles/variables/variables.scss";
+
+.about__container {
+  width: min(95%, 1200px);
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+    margin-inline: auto;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  button {
+    background-color: #ffe6e8;
+    color: $secondaryColor;
+  }
+  .about__image {
+    flex: 1;
+    width: 50%;
+    @media screen and (max-width: 1000px) {
+      width: 300px;
+    }
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .info {
+    flex: 1;
+  }
+}
