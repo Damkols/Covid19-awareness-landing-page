@@ -1,0 +1,26 @@
+@import "../../styles/mixin/mixin.scss";
+
+.symptoms {
+  margin: 2rem;
+  .info {
+    @include enableFlex(true);
+    .description {
+      width: 40%;
+      text-align: center;
+
+      @media screen and (max-width: 1000px) {
+        width: 100%;
+      }
+    }
+  }
+  .image {
+    @include enableFlex();
+    img {
+      width: 90%;
+
+      @media screen and (max-width: 1000px) {
+        width: 100%;
+      }
+    }
+  }
+}

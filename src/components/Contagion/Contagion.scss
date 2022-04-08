@@ -2,7 +2,7 @@
 @import "../../styles/variables/variables.scss";
 
 .contagion {
-  margin: 2rem 4rem;
+  margin: 2rem 2rem;
   .info {
     @include enableFlex(true);
 
@@ -10,7 +10,7 @@
       width: 40%;
       text-align: center;
 
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 1000px) {
         width: 100%;
       }
     }

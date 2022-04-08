@@ -2,6 +2,8 @@ import About from "./components/About/About";
 import Contagion from "./components/Contagion/Contagion";
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
+import Solutions from "./components/Solutions/Solutions";
+import Symptoms from "./components/Symptoms/Symptoms";
 import "./styles/Global.scss";
 
 function App() {
@@ -11,6 +13,8 @@ function App() {
       <Hero />
       <About />
       <Contagion />
+      <Symptoms />
+      <Solutions />
     </div>
   );
 }
