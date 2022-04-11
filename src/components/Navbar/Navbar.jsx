@@ -15,16 +15,16 @@ const Navbar = () => {
 
       <div className={`nav-items ${isOpen && "open"}`}>
         <a href="#/" onClick={() => setIsOpen(!isOpen)}>
-          Home
+          Overview
         </a>
         <a href="#Work" onClick={() => setIsOpen(!isOpen)}>
-          Work
+          Contagion
         </a>
         <a href="#Resume" onClick={() => setIsOpen(!isOpen)}>
-          Resume
+          Symptoms
         </a>
         <a href="#Contact" onClick={() => setIsOpen(!isOpen)}>
-          Contact
+          Prevention
         </a>
       </div>
 
